@@ -24,9 +24,6 @@
 
                             <!-- Konten -->
                             <div class="flex-auto p-6">
-                                <p class="mb-2 text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">
-                                    Project #1
-                                </p>
                                 <a href="{{ url('kursus/modul') }}">
                                     <h5 class="text-lg font-semibold">Modern Design</h5>
                                 </a>

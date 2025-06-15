@@ -16,11 +16,6 @@ class Login extends Component
         'password' => 'required',
     ];
 
-    public function mount()
-    {
-        $this->fill(['email' => 'admin@softui.com', 'password' => 'secret']);
-    }
-
     public function login()
     {
         if (auth()->attempt(['email' => $this->email, 'password' => $this->password], $this->remember_me)) {
