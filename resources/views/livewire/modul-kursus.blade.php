@@ -7,14 +7,14 @@
             </h1>
 
             <!-- Box Deskripsi & Search -->
-            <div class="mt-8 bg-gray-100 rounded-xl p-6">
+            <div class="mt-8 bg-gradient-fuchsia rounded-xl p-6">
                 <div class="flex flex-col justify-between">
                     <!-- Deskripsi -->
                     <div class="text-center md:text-left mb-6 md:mb-0">
-                        <h2 class="font-medium text-xl text-gray-800 mb-2">
+                        <h2 class="font-bold text-xl text-white mb-2">
                             Modul Belajar
                         </h2>
-                        <p class="text-sm text-gray-600 mx-auto md:mx-0">
+                        <p class="text-sm text-white mx-auto md:mx-0">
                             Pilih salah satu modul untuk melihat materi pembelajaran yang tersedia.
                         </p>
                     </div>

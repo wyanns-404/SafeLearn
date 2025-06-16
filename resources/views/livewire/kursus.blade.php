@@ -37,6 +37,60 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Kartu Kursus -->
+                    <div class="w-full max-w-full px-3">
+                        <div
+                            class="relative flex flex-col md:flex-row min-w-0 break-words bg-white shadow-md rounded-2xl overflow-hidden">
+                            <!-- Gambar -->
+                            <div class="w-full md:w-1/3 h-60 md:h-auto">
+                                <a class="block w-full h-full">
+                                    <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow"
+                                        class="w-full h-full object-cover shadow-soft-2xl" />
+                                </a>
+                            </div>
+
+                            <!-- Konten -->
+                            <div class="flex-auto p-6">
+                                <a href="{{ url('kursus/modul') }}">
+                                    <h5 class="text-lg font-semibold">Modern Design</h5>
+                                </a>
+                                <p class="mb-4 text-size-sm text-gray-600">
+                                    Pelajari desain modern dengan pendekatan real-world yang praktis.
+                                </p>
+                                <a href="{{ url('kursus/modul') }}"
+                                    class="inline-block px-6 py-2 font-bold text-size-xs text-fuchsia-500 border border-fuchsia-500 rounded-lg transition-all hover:scale-105 hover:opacity-80">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Kartu Kursus -->
+                    <div class="w-full max-w-full px-3">
+                        <div
+                            class="relative flex flex-col md:flex-row min-w-0 break-words bg-white shadow-md rounded-2xl overflow-hidden">
+                            <!-- Gambar -->
+                            <div class="w-full md:w-1/3 h-60 md:h-auto">
+                                <a class="block w-full h-full">
+                                    <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow"
+                                        class="w-full h-full object-cover shadow-soft-2xl" />
+                                </a>
+                            </div>
+
+                            <!-- Konten -->
+                            <div class="flex-auto p-6">
+                                <a href="{{ url('kursus/modul') }}">
+                                    <h5 class="text-lg font-semibold">Modern Design</h5>
+                                </a>
+                                <p class="mb-4 text-size-sm text-gray-600">
+                                    Pelajari desain modern dengan pendekatan real-world yang praktis.
+                                </p>
+                                <a href="{{ url('kursus/modul') }}"
+                                    class="inline-block px-6 py-2 font-bold text-size-xs text-fuchsia-500 border border-fuchsia-500 rounded-lg transition-all hover:scale-105 hover:opacity-80">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- Tambah kartu lainnya jika perlu -->
                 </div>

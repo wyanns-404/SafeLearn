@@ -11,10 +11,6 @@
                                 <div class="p-6 pb-0 mb-0 bg-transparent border-b-0 rounded-t-2xl">
                                     <h3 class="relative z-10 font-bold text-transparent bg-gradient-cyan bg-clip-text">
                                         Welcome back!</h3>
-                                    <p class="mb-0">Create a new acount<br></p>
-                                    <p class="mb-0">OR Sign in with these credentials:</p>
-                                    <p class="mb-0">Email: <b>admin@softui.com</b></p>
-                                    <p class="mb-0">Password: <b>secret</b></p>
                                 </div>
 
                                 <div class="flex-auto p-6">
@@ -74,9 +70,6 @@
                                 <div
                                     class="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
                                     <p class="mx-auto mb-6 leading-normal text-size-sm">
-                                        Forgot your password? Reset your password
-                                        <a href="{{ route('forgot-password') }}"
-                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">here</a>.<br />
                                         Don't have an account?
                                         <a href="{{ route('register') }}"
                                             class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">Sign

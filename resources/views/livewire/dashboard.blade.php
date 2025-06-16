@@ -136,10 +136,10 @@
                     <div class="flex flex-wrap -mx-3">
                         <div class="max-w-full px-3 lg:w-1/2 lg:flex-none">
                             <div class="flex flex-col h-full">
-                                <p class="pt-2 mb-1 font-semibold">Upgrade To Premium</p>
-                                <h5 class="font-bold">Akses Penuh Semua Kursus</h5>
-                                <p class="mb-12">From colors, cards, typography to complex elements, you will find
-                                    the full documentation.</p>
+                                <p class="pt-2 mb-1 font-semibold"><s>Rp.300.000,00</s></p>
+                                <h5 class="font-bold">Rp.149.000,00</h5>
+                                <p class="mb-12">Upgrade To Premium, Akses Penuh Semua Kursus, dari warna, kartu, tipografi hingga elemen kompleks, Anda akan menemukand
+                                    dokumentasi lengkap.</p>
                                 <a class="inline-block w-full px-6 py-3 my-4 font-bold text-center text-white uppercase align-middle transition-all ease-in border-0 rounded-lg select-none shadow-soft-md bg-150 bg-x-25 leading-pro text-size-xs bg-gradient-fuchsia hover:shadow-soft-2xl hover:scale-102"
                                     href="https://www.creative-tim.com/product/soft-ui-dashboard-pro-tall"
                                     target="_blank">BELI SEKARANG</a>

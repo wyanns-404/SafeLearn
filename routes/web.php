@@ -39,9 +39,6 @@ Route::get('/', function () {
 Route::middleware('guest')->group(function () {
     Route::get('/register', Register::class)->name('register');
     Route::get('/login', Login::class)->name('login');
-
-    Route::get('/login/forgot-password', ForgotPassword::class)->name('forgot-password');
-    Route::get('/reset-password/{id}', ResetPassword::class)->name('reset-password')->middleware('signed');
 });
 
 Route::middleware('auth')->group(function () {
