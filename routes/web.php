@@ -10,6 +10,7 @@ use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Billing;
 use App\Http\Livewire\Kursus;
 use App\Http\Livewire\ModulKursus;
+use App\Http\Livewire\Kuis;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Tables;
 use App\Http\Livewire\StaticSignIn;
@@ -45,5 +46,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/kursus', Kursus::class)->name('kursus');
     Route::get('/kursus/modul', ModulKursus::class)->name('kursus-modul');
+    Route::get('/kursus/kuis', Kuis::class)->name('kursus-kuis');
     Route::get('/user-profile', UserProfile::class)->name('user-profile');
 });

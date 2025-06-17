@@ -81,7 +81,7 @@
 
 
         <div class="relative flex flex-col mb-6 bg-white shadow-soft-xl rounded-2xl p-6">
-            <a href="{{ url('kursus/modul') }}"
+            <a href="{{ url('kursus/kuis') }}"
                 class="inline-block px-6 py-2 font-bold text-center text-size-lg text-fuchsia-500 border border-fuchsia-500 rounded-lg transition-all hover:scale-102 hover:opacity-80">
                 Mengerjakan Kuis
             </a>

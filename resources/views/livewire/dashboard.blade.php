@@ -10,17 +10,11 @@
             <div
                 class="relative flex flex-col flex-auto min-w-0 p-4 mx-6 -mt-16 overflow-hidden break-words border-0 shadow-blur rounded-2xl bg-white/80 bg-clip-border backdrop-blur-2xl backdrop-saturate-200">
                 <div class="flex flex-wrap -mx-3">
-                    <div class="flex-none w-auto max-w-full px-3">
-                        <div
-                            class="text-size-base ease-soft-in-out h-18.5 w-18.5 relative inline-flex items-center justify-center rounded-xl text-white transition-all duration-200">
-                            <img src="../assets/img/bruce-mars.jpg" alt="profile_image"
-                                class="w-full shadow-soft-sm rounded-xl" />
-                        </div>
-                    </div>
                     <div class="flex-none w-auto max-w-full px-3 my-auto">
                         <div class="h-full">
-                            <h5 class="mb-1">Welcome, Alec Thompson</h5>
-                            <p class="mb-0 font-semibold leading-normal text-size-sm">Lorem ipsum dolor sit, amet
+                            <h5 class="mb-1">Welcome, {{ $user->name }}</h5>
+                            <p class="mb-0 font-semibold leading-normal text-size-sm">
+                                Lorem ipsum dolor sit, amet
                                 consectetur adipisicing elit.</p>
                         </div>
                     </div>
@@ -30,8 +24,7 @@
                             <ul class="relative flex flex-wrap p-1 list-none bg-transparent rounded-xl">
                                 <li class="z-30 flex-auto text-center">
                                     <a class="inline-block w-full px-6 py-3 my-4 font-bold text-center text-white uppercase align-middle transition-all ease-in border-0 rounded-lg select-none shadow-soft-md bg-150 bg-x-25 leading-pro text-size-xs bg-gradient-fuchsia hover:shadow-soft-2xl hover:scale-102"
-                                        href="https://www.creative-tim.com/product/soft-ui-dashboard-pro-tall"
-                                        target="_blank">Upgrade to premium</a>
+                                        href="#">Upgrade to premium</a>
                                 </li>
                             </ul>
                         </div>
@@ -67,60 +60,14 @@
                                         management turmoil.</p>
                                     <div class="flex items-center justify-center">
                                         <button type="button" class="w-full inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-size-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">
-                                            View Project
+                                            View Course
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         {{--  --}}
-                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                            <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                <div class="relative">
-                                    <a class="block shadow-xl rounded-2xl">
-                                        <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow"
-                                            class="max-w-full shadow-soft-2xl rounded-2xl" />
-                                    </a>
-                                </div>
-                                <div class="flex-auto px-1 pt-6">
-                                    <a href="javascript:;">
-                                        <h5>Modern</h5>
-                                    </a>
-                                    <p class="mb-6 leading-normal text-size-sm">As Uber works through a huge amount of
-                                        internal
-                                        management turmoil.</p>
-                                    <div class="flex items-center justify-center">
-                                        <button type="button" class="w-full inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-size-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">
-                                            View Project
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {{--  --}}
-                        <div class="w-full max-w-full px-3 mb-6 md:w-6/12 md:flex-none xl:mb-0 xl:w-3/12">
-                            <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
-                                <div class="relative">
-                                    <a class="block shadow-xl rounded-2xl">
-                                        <img src="../assets/img/home-decor-1.jpg" alt="img-blur-shadow"
-                                            class="max-w-full shadow-soft-2xl rounded-2xl" />
-                                    </a>
-                                </div>
-                                <div class="flex-auto px-1 pt-6">
-                                    <a href="javascript:;">
-                                        <h5>Modern</h5>
-                                    </a>
-                                    <p class="mb-6 leading-normal text-size-sm">As Uber works through a huge amount of
-                                        internal
-                                        management turmoil.</p>
-                                    <div class="flex items-center justify-center">
-                                        <button type="button" class="w-full inline-block px-8 py-2 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border border-solid rounded-lg shadow-none cursor-pointer leading-pro ease-soft-in text-size-xs hover:scale-102 active:shadow-soft-xs tracking-tight-soft border-fuchsia-500 text-fuchsia-500 hover:border-fuchsia-500 hover:bg-transparent hover:text-fuchsia-500 hover:opacity-75 hover:shadow-none active:bg-fuchsia-500 active:text-white active:hover:bg-transparent active:hover:text-fuchsia-500">
-                                            View Project
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -128,7 +75,7 @@
         </div>
     </div>
 
-    <!-- cards row 2 -->
+    <!-- Harga DLL 2 -->
     <div class="flex flex-wrap mt-6 -mx-3">
         <div class="w-full px-3 mb-6 lg:mb-0 lg:w-7/12 lg:flex-none">
             <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
@@ -172,8 +119,7 @@
                             all about who take the opportunity first. Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit.
                             Est vel dolorem voluptatem doloremque commodi beatae excepturi ut at.
-                            Dicta eos molestiae praesentium? Corrupti blanditiis laborum exercitationem nulla fuga quos
-                            commodi!</p>
+                        </p>
                     </div>
                 </div>
             </div>
