@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
+            $table->string('name'); // tambah kolom nama
+            $table->text('description')->nullable(); // tambah kolom deskripsi
             $table->timestamps();
         });
     }

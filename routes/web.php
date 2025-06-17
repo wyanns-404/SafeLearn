@@ -45,7 +45,7 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
     Route::get('/kursus', Kursus::class)->name('kursus');
-    Route::get('/kursus/modul', ModulKursus::class)->name('kursus-modul');
-    Route::get('/kursus/kuis', Kuis::class)->name('kursus-kuis');
+    Route::get('/kursus/modul/{courseId}', ModulKursus::class)->name('kursus-modul');
+    Route::get('/kursus/kuis/{courseId}', Kuis::class)->name('kursus-kuis');
     Route::get('/user-profile', UserProfile::class)->name('user-profile');
 });

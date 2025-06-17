@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('location')->nullable();
             $table->text('about')->nullable();
+            $table->boolean('is_premium')->default(false);
             $table->rememberToken();
             $table->timestamps();
         });

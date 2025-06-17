@@ -11,9 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('premium_purchases', function (Blueprint $table) {
+        Schema::create('modules', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('course_id');
+            $table->string('title');
+            $table->longText('content')->nullable(); // isi materi
             $table->timestamps();
+
+            $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
         });
     }
 
@@ -22,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('premium_purchases');
+        Schema::dropIfExists('modules');
     }
 };

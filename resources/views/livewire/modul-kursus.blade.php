@@ -23,20 +23,14 @@
 
             <!-- Daftar Modul -->
             <div class="w-full mt-10">
-                @for ($i = 1; $i <= 5; $i++)
+                @foreach ($modules as $index => $module)
                     <div class="collapse-item w-full mt-6 rounded-xl shadow border border-gray-200 p-4">
                         <!-- Header Collapse -->
                         <div class="mainHeading flex justify-between items-center cursor-pointer"
                             onclick="toggleCollapse(this)">
                             <p class="flex items-center font-medium text-gray-800 text-base">
-                                <span class="mr-4 font-semibold text-xl">Modul {{ $i }}.</span>
-                                {{ match ($i) {
-                                    1 => 'Pengenalan HTML Dasar',
-                                    2 => 'Dasar CSS dan Styling',
-                                    3 => 'Layouting dengan Flex dan Grid',
-                                    4 => 'Dasar JavaScript',
-                                    5 => 'Project Mini Web',
-                                } }}
+                                <span class="mr-4 font-semibold text-xl">Modul {{ $index + 1 }}.</span>
+                                {{ $module->title }}
                             </p>
                             <svg class="toggle-icon transition-transform duration-300 w-5 h-5 text-gray-500"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,40 +42,18 @@
                         <!-- Isi Collapse -->
                         <div class="menu hidden mt-4">
                             <p class="text-base text-gray-600 leading-6">
-                                @switch($i)
-                                    @case(1)
-                                        Materi ini mencakup struktur HTML dasar seperti tag `html`, `head`, `body`, `h1`, dan
-                                        `p`.
-                                    @break
-
-                                    @case(2)
-                                        Pelajari cara menggunakan properti CSS dasar seperti warna, margin, padding, font, dan
-                                        background.
-                                    @break
-
-                                    @case(3)
-                                        Fokus pada teknik layout responsif menggunakan Flexbox dan CSS Grid.
-                                    @break
-
-                                    @case(4)
-                                        Mengenal dasar JavaScript seperti variabel, fungsi, event handling, dan manipulasi DOM.
-                                    @break
-
-                                    @case(5)
-                                        Membangun proyek mini website sederhana menggunakan HTML, CSS, dan JavaScript.
-                                    @break
-                                @endswitch
+                                {{ $module->content }}
                             </p>
                         </div>
                         <hr class="w-full mt-4" />
                     </div>
-                @endfor
+                @endforeach
             </div>
         </div>
 
 
         <div class="relative flex flex-col mb-6 bg-white shadow-soft-xl rounded-2xl p-6">
-            <a href="{{ url('kursus/kuis') }}"
+            <a href="{{ url('kursus/kuis/' . $course->id) }}"
                 class="inline-block px-6 py-2 font-bold text-center text-size-lg text-fuchsia-500 border border-fuchsia-500 rounded-lg transition-all hover:scale-102 hover:opacity-80">
                 Mengerjakan Kuis
             </a>
